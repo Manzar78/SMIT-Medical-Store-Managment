@@ -21,8 +21,12 @@ void addMedicine() {
   print("Enter Company Address");
   String address = stdin.readLineSync()!;
 
-  print(
-      "Medicine Named $medicineName Quantity $medicineQuantity added Suceesfully");
+  List data = [];
+  data.add("Medicine name : $medicineName");
+  data.add("Medicine Quantity : $medicineQuantity");
+  data.add("Medine Company Address : $address");
+
+  print(data);
 }
 
 void listMedicine() {

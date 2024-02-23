@@ -24,8 +24,13 @@ void addSupplier() {
   print("Enter Supplier contact");
   int supplierContact = int.parse(stdin.readLineSync()!);
 
-  print(
-      "Supplier named $supplierName and ID : $suppplierID has been added Succesfully");
+  List data = [
+    "Supplier ID : $suppplierID",
+    "Supplier Contact : $supplierContact",
+    "Supplier Name : $supplierName"
+  ];
+
+  print(data);
 }
 
 void listSupplier() {
